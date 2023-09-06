@@ -12,7 +12,7 @@ const app = express()
 //MW
 
 app.use(cors({
-	origin: "http://localhost:5173"
+	origin: ["http://localhost:5173", "https://theworkoutbuddy.netlify.app/"]
 }))
 app.use(express.json())
 app.use((req,res,next) => {
